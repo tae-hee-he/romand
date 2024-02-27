@@ -1,0 +1,95 @@
+@import url(../12주차/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    padding: 5px 0;
+}
+.header>.top-1{
+    height: 45px;
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+    align-content: center;
+}
+.header>.top-1>img{
+    width: 130px;
+    height: 45px;
+}
+.header>.top-1>h1{
+    padding: 15px 10px 0px 10px;
+    font-size: 23px;
+    font-weight: 100;
+    font-family: 'Pretendard-Regular';
+    color:rgb(251, 185, 196);
+}
+.top-2{
+    position: fixed;
+    right: 30px;
+    top:0px;
+    margin: 15px 20px 0 0;
+    padding: 5px 0px 0px 10px;
+    background-color: rgb(251, 185, 196);
+    border-radius:20px;
+}
+.top-2>a{
+    text-decoration: none;
+    color: gray;
+}
+.top-2>a>span{
+    font-size: 30px;
+    padding-right: 10px;
+}
+.bc{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-image: url(img/main2.svg);
+    background-position: 0px -430px;
+    display: flex;
+    align-items: center;
+}
+.bc>div{
+    width: 34%;
+    line-height: 76vh;
+    background-color: rgb(251, 185, 196);
+    font-size: 30px;
+    font-family: 'Pretendard-Regular';
+    font-weight: 500;
+    opacity: 0;
+    text-align: center;
+}
+.bc>div:hover{
+    opacity: 75%;
+}
+.bc>div>a{
+    display: block;
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+}
+footer{
+    background-color: rgb(251, 185, 196);
+    color: #717171;
+    font-size: 13px;
+    padding: 30px 0 0 20px;
+    line-height: 1.5;
+    font-family: 'Pretendard-Regular';
+}
+footer>span{
+    color: black;
+    font-size: 14px;
+}
+footer>p{
+    padding: 20px 0;
+}

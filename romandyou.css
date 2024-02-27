@@ -1,0 +1,348 @@
+@font-face {
+    font-family: 'CWDangamAsac-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.con1{
+    background-color: rgb(251, 185, 196);
+    height: 100%;
+    width: 100%;
+}
+.con1>h1{
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+}
+.con1> h1 span {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce .3s ease infinite alternate;
+    font-family: 'CWDangamAsac-Bold';
+    font-size: 100px;
+    color: #FFF;
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 3px 0 #CCC,
+                 0 4px 0 #CCC,
+                 0 5px 0 #CCC,
+                 0 6px 0 transparent,
+                 0 7px 0 transparent,
+                 0 8px 0 transparent,
+                 0 9px 0 transparent,
+                 0 10px 10px rgba(0, 0, 0, .4);
+  }
+  
+  h1 span:nth-child(2) { animation-delay: .1s; }
+  h1 span:nth-child(3) { animation-delay: .2s; }
+  h1 span:nth-child(4) { animation-delay: .3s; }
+  h1 span:nth-child(5) { animation-delay: .4s; }
+  h1 span:nth-child(6) { animation-delay: .5s; }
+  
+  @keyframes bounce {
+    100% {
+      top: -20px;
+      text-shadow: 0 1px 0 #CCC,
+                   0 2px 0 #CCC,
+                   0 3px 0 #CCC,
+                   0 4px 0 #CCC,
+                   0 5px 0 #CCC,
+                   0 6px 0 #CCC,
+                   0 7px 0 #CCC,
+                   0 8px 0 #CCC,
+                   0 9px 0 #CCC,
+                   0 50px 25px rgba(0, 0, 0, .2);
+    }
+  }
+.con1>.text>p{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Pretendard-Regular';
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 10px;
+}
+.con1>.text>p:last-child{
+    font-size: 22px;
+    font-family: 'Pretendard-Regular';
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+.tube{
+    background-color: rgb(251, 185, 196);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 90px;
+}
+.line{
+    color: #fff;
+    background-color: rgb(251, 185, 196);
+    font-size: 22px;
+    text-align: center;
+}
+.line2{
+    background-color: rgb(251, 185, 196);
+}
+.line2>div{
+    width: 1.6px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #FFF;
+}
+.text2{
+    background-color: rgb(251, 185, 196);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 22px;
+    font-family: 'Pretendard-Regular';
+    color: #fff;
+}
+.insta{
+    padding: 15px 0px 90px 0;
+    background-color: rgb(251, 185, 196);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.insta-img{
+    position: relative;
+}
+.insta-img>.txt{
+    position: absolute;
+    bottom: 90px;
+    left: 28px;
+}
+.insta-img>.txt>p>a:hover{
+    color:rgb(251, 185, 196);
+}
+.insta-img>.txt>p>a{
+    text-decoration: none;
+    font-family: 'Pretendard-Regular';
+    color: rgb(59, 58, 58);
+    font-size: 18px;
+}
+.insta-ani{
+    width: 444px;
+    position: relative;
+}
+.insta-ani>img{
+    margin: 0 auto;
+    z-index: 2;
+    display: inline-block;
+    box-shadow: #6f6f6f 4px 4px 3px;
+}
+.insta-ani>.in-wrap{
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top:135px;
+    left: 20px;
+}
+.insta-ani>.in-wrap>.slide{
+    animation: show 35s linear infinite;
+}
+.insta-ani>.in-wrap>div{
+    display: flex;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    width: 1600px;   
+}
+.insta-ani>.in-wrap>.slide>div{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+.insta-ani>.in-wrap>.slide>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes show{
+    0%{
+        transform: translate(0,0)
+    }
+    15%{
+        transform: translate(-25%, 0)
+    }
+    17%{
+        transform: translate(-25%, 0)
+    }
+    32%{
+        transform: translate(-50%,0)
+    }
+    34%{
+        transform: translate(-50%,0)
+    }
+    49%{
+        transform: translate(-75%,0)
+    }
+    51%{
+        transform: translate(-75%,0)
+    }
+    66%{
+        transform: translate(-50%,0)
+    }
+    68%{
+        transform: translate(-50%, 0)
+    }
+    83%{
+        transform: translate(-25%, 0)
+    }
+    85%{
+        transform: translate(-25%, 0)
+    }
+    98%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+.rom{
+    width: 100%;
+    padding-top: 80px;
+    overflow-x: hidden;
+}
+.text-ani{
+    display: flex;
+}
+
+.text-ani>img{
+    display: inline-block;
+    width: auto;
+    animation: move 15s linear infinite;
+}
+@keyframes move {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.cemi{
+    width: 100%;
+    background-color: rgb(251, 185, 196);
+    display: flex;
+}
+.cemi>.cemi-img{
+    padding-top: 30px;
+    width: 50%;
+    height: 630px;
+    overflow: hidden;
+}
+.cemi>.cemi-img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+.cemi>.cemi-text{
+    padding-left: 50px;
+}
+.cemi>.cemi-text>p:first-child{
+    font-size: 45px;
+    color: #fff;
+    line-height: 1.2;
+    font-family: 'yg-jalnan';
+    padding-top: 80px;
+}
+.cemi>.cemi-text>p:nth-child(2){
+    font-size: 22px;
+    padding-top: 50px;
+    line-height: 1.5;
+    color: #fff;
+    font-family: 'Pretendard-Regular';
+}
+.cemi>.cemi-text>div{
+    margin-top: 20px;
+    width: 200px;
+    height: 55px;
+    /* border: solid 3px rgb(250, 147, 164); */
+    border-radius: 5px;
+    background: #ffffff;
+    text-align: center;
+}
+.cemi>.cemi-text>div>a{
+    display: block;
+    text-decoration: none;
+    line-height: 55px;
+    font-size: 22px;
+    height: 0;
+    color: #494949;
+    transition: .1s;
+    border-radius: 4px;
+    font-family: 'Pretendard-Regular';
+font-weight: 600;
+    background-color:rgb(250, 147, 164);
+}
+.cemi>.cemi-text>div>a:hover{
+    height: 55px;
+}
+.romx{
+    height: 250px;
+    background-color:  rgb(251, 185, 196);;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.romx>div{
+    display: block;
+    width: 198%;
+    height: 250px;
+    position: absolute;
+    overflow: hidden;
+  
+    animation: rom 5s linear infinite;
+}
+.romx>.romt>span{
+    color: #fff;
+    font-size: 200px;
+    font-family: 'CWDangamAsac-Bold';
+    float: left;
+    width: 50%;
+}
+
+@keyframes rom {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
+.footer{
+    background-color: rgb(251, 185, 196);
+    color: #717171;
+    font-size: 13px;
+    padding: 30px 0 0 20px;
+    line-height: 1.5;
+    font-family: 'Pretendard-Regular';
+}
+.footer>span{
+    color: black;
+    font-size: 14px;
+}
+.footer>p{
+    padding: 20px 0;
+}
